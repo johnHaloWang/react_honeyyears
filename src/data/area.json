@@ -1,0 +1,24 @@
+{
+
+    "items": [
+      {
+        "name": "1.北达科他州",
+        "shape": "circle",
+        "coords": [222, 36, 10],
+        "preFillColor": "rgb(255,255,255,0.3)",
+        "lineWidth": 4,
+        "strokeColor": "black",
+        "href":"/北达科他州"
+    },
+    {
+        "name": "2.蒙大纳州",
+        "shape": "circle",
+        "coords": [140, 37, 10],
+        "preFillColor": "rgb(255,255,255,0.3)",
+        "lineWidth": 4,
+        "strokeColor": "black",
+        "href":"/蒙大纳州"
+    }    
+    
+    ]
+  }
