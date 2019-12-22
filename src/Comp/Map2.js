@@ -3,7 +3,8 @@ import  mappic from "../img/map2.png";
 import '../App.css';
 // import ImageMapper from './ImageMapper';
 import ImageMapper from 'react-image-mapper';
-import { Redirect } from 'react-router-dom'
+// import { Redirect } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import ReactDOM from "react-dom"  //var ReactDOM = require("react-dom");
@@ -102,7 +103,9 @@ export class Map2 extends React.Component{
 	}
 	load() {
         console.log("load");
-		this.setState({ msg: "Interact with image !" });
+        // this.setState({ msg: "Interact with image !" });
+        this.setState({ msg: "For test only" });
+        
 	}
 	clicked(area) {
         console.log("clicked");
@@ -169,40 +172,195 @@ export class Map2 extends React.Component{
 
 	render() {
 		return (
-			<div className="grid">
-				<div className="presenter">
-					<div className="container">
-						<ImageMapper
-							src={mappic}
-							map={this.MAP}
-							width={500}
-							onLoad={() => this.load()}
-							onClick={area => this.clicked(area)}
-							onMouseEnter={area => this.enterArea(area)}
-							onMouseLeave={area => this.leaveArea(area)}
-							onMouseMove={(area, _, evt) => this.moveOnArea(area, evt)}
-							onImageClick={evt => this.clickedOutside(evt)}
-							onImageMouseMove={evt => this.moveOnImage(evt)}
-							lineWidth={4}
-							strokeColor={"white"}
-						/>
-						{this.state.hoveredArea && (
-							<span
-								className="tooltip"
-								style={{ ...this.getTipPosition(this.state.hoveredArea) }}
-							>
-								{this.state.hoveredArea && this.state.hoveredArea.name}
-							</span>
-						)}
-					</div>
-					<pre className="message">
-						{this.state.msg ? this.state.msg : null}
-					</pre>
-					<pre>
-                        {this.state.moveMsg ? this.state.moveMsg : null}
-                    </pre>
+            <div>
+                <div>
+                {/* <!-- Header --> */}
+			
+
+		{/* <!-- Banner --> */}
+			<section id="banner">
+				<div class="inner">
+					<h1> <span>大多数人都曾梦想过有朝一日可以环游世界，四海为家。<br />
+					可随着年纪的增长，我们都随着社会的洪流趋于平庸，不得不为生计日夜奔劳。<br />
+                    高晓松一句：“生活不止眼前的苟且，还有诗和远方。”曾经打动了多少文艺青年。<br/>
+                    </span></h1>
+					<ul class="actions">
+						<li><a href="#" class="button alt">世界这么大，我想去看看</a></li>
+					</ul>
 				</div>
-			</div>
+			</section>
+
+		{/* <!-- One --> */}
+			<section id="one">
+				<div class="inner">
+					<header>
+						<h2>白日梦想家</h2>
+					</header>
+					<p>节目将通过两位在美国生活五年的25岁新婚夫妻的蜜月之行，利用一年的时间驾驶房车，走遍全美本土48州，为观众呈现一个真实，完整的美国。他们也将在这一年的时间内与他们的房车朝夕相处，并肩作战，一同实现曾经幻想过的美好的白日梦</p>
+					{/* <ul class="actions">
+						<li><a href="#" class="button alt">Learn More</a></li>
+					</ul> */}
+				</div>
+			</section>
+
+		{/* <!-- Two --> */}
+			<section id="one">
+				<div class="inner">
+					{/* <article>
+						<div class="content">
+							<header>
+								<h3>Pellentesque adipis</h3>
+							</header>
+							<div class="image fit">
+								<img src="images/pic01.jpg" alt="" />
+							</div>
+							<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
+						</div>
+					</article> */}
+					<article class="alt">
+						<div class="content">
+							<header>
+								<h3>48 States</h3>
+							</header>
+							<div class="image fit">
+								<img src="images/pic02.jpg" alt="" />
+							</div>
+							<p>Click the black circle to view the trip.</p>
+						</div>
+                    </article>
+                    <div className="presenter">
+                        <div className="container jumbotron" >
+                            <center>
+                            <div className="imgCenter">
+                            <ImageMapper
+                                src={mappic}
+                                map={this.MAP}
+                                width={500}
+                                onLoad={() => this.load()}
+                                onClick={area => this.clicked(area)}
+                                onMouseEnter={area => this.enterArea(area)}
+                                onMouseLeave={area => this.leaveArea(area)}
+                                onMouseMove={(area, _, evt) => this.moveOnArea(area, evt)}
+                                onImageClick={evt => this.clickedOutside(evt)}
+                                onImageMouseMove={evt => this.moveOnImage(evt)}
+                                lineWidth={4}
+                                strokeColor={"white"}
+                            />
+                            {this.state.hoveredArea && (
+                                <span
+                                    className="tooltip"
+                                    style={{ ...this.getTipPosition(this.state.hoveredArea) }}
+                                >
+                                    {this.state.hoveredArea && this.state.hoveredArea.name}
+                                </span>
+                            )}
+                            
+                            </div>
+                        </center>
+                        <pre className="message">
+                            {this.state.msg ? this.state.msg : null}
+                        </pre>
+                        <pre>
+                            {this.state.moveMsg ? this.state.moveMsg : null}
+                        </pre>
+                        </div>
+			        </div>
+				</div>
+			</section>
+
+		{/* <!-- Three --> */}
+			<section id="three">
+            <header>
+                <h3><u>Sponsors</u></h3>
+            </header>
+				<div class="inner">
+					<article>
+						<div class="content">
+							<span class="icon fa-laptop"></span>
+							<header>
+								<h3>Tempus Feugiat</h3>
+							</header>
+							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna lorem ullamcorper laoreet, lectus arcu.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+							<span class="icon fa-diamond"></span>
+							<header>
+								<h3>Aliquam Nulla</h3>
+							</header>
+							<p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</div>
+					</article>
+					<article>
+					<div class="content">
+							<span class="icon fa-laptop"></span>
+							<header>
+								<h3>Sed Magna</h3>
+							</header>
+							<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		{/* <!-- Footer --> */}
+			<section id="footer">
+				<div class="inner">
+					<header>
+						<h2>Get in Touch</h2>
+					</header>
+					<form method="post" action="#">
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="alt" /></li>
+						</ul>
+					</form>
+					<div class="copyright">
+						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+					</div>
+				</div>
+			</section>
+                
+                    {/* <section id="cta" class="wrapper">
+                        <div class="inner">
+                            <h1>Slogan</h1>
+                        </div>
+                    </section> */}
+                    {/* <section  class="wrapper">
+                        <div class="content">
+                            <header>
+                                <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+                                    <h3>Faucibus consequat</h3>
+                            </header>
+                            <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                        </div>
+                    </section> */}
+                    
+                    
+                </div>
+            </div>
+			
 		);
 	}
 }

@@ -10,24 +10,37 @@ function Nav() {
         
         
     return (
-        <nav>
-            <h3>Logo</h3>
-            <ul className='nav-links'>
-                <Link style={navStyle} to='/about'>
-                    <li>About</li>
-                </Link>
-                <Link style={navStyle} to='/Shop'>
-                    <li>Shop</li>
-                </Link>
-                <Link style={navStyle} to='/intro'>
-                    <li>Intro</li>
-                </Link>
-                <Link style={navStyle} to='/Home'>
-                    <li>Home</li>
-                </Link>
+        <header id="header">
+				<div class="inner">
+                        <Link to='/home' class="logo">
+                            Honeyyears
+                        </Link>
+					{/* <a href="index.html" class="logo">Honeyyears</a> */}
+					<nav id="nav">
+                        <Link style={navStyle} to='/home'>
+                            <li>Home</li>
+                        </Link>
+                        <Link style={navStyle} to='/about'>
+                        <li>About Us</li>
+                        </Link>
+                        {/* <Link style={navStyle} to='/shop'>
+                            <li>Shop</li>
+                        </Link> */}
+                        <Link style={navStyle} to='/donation'>
+                            <li>Donation</li>
+                        </Link>
+                        
                 
-            </ul>
-        </nav>
+					</nav>
+				</div>
+			</header>
+			// <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        // <nav>
+        //     <h3>Logo</h3>
+        //     <ul className='nav-links'>
+                
+        //     </ul>
+        // </nav>
     );
 }
 
