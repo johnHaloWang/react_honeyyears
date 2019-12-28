@@ -21,72 +21,108 @@ function 北达科他州() {
                 <p >
                     <center>Contents coming soon</center><br></br>
                 </p>
-                <br></br>
-                <div class="card-deck mb-3 text-center">
-                    <div class="card mb-4 shadow-sm">
-                        <YouTube
-                            videoId="4x0_e0t7tUo"
-                            opts={{
-                            height: '200',
-                            width: '250',
-                            playerVars: {
-                                autoplay: 1
-                            }}
-                            }
-                            onReady={_onReady}
-                        />
+                <div class="row mb-5">
+
+        {/* <!--Grid column--> */}
+        <div class="col-lg-4 col-md-12">
+
+          <p class="h5 mb-4">.z-depth-1</p>
+
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa3Iczgh8Ok" style={{height: '101%'}}
+              allowfullscreen title="frame1"></iframe>
+          </div>
+
+        </div>
+        {/* <!--Grid column--> */}
+
+
+                {/* <!--Grid column--> */}
+                <div class="col-lg-4 col-md-6">
+                    <p class="h5 mb-4">.z-depth-1-half</p>
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa3Iczgh8Ok" style={{height: '101%'}}
+                        allowfullscreen title="frame2"></iframe>
                     </div>
-                    <div class="card mb-4 shadow-sm">
-                        <YouTube
-                            videoId="4x0_e0t7tUo"
-                            opts={{
-                            height: '200',
-                            width: '250',
-                            playerVars: {
-                                autoplay: 1
-                            }}
-                            }
-                            onReady={_onReady}
-                        />
-                    </div><div class="card mb-4 shadow-sm">
-                        <YouTube
-                            videoId="4x0_e0t7tUo"
-                            opts={{
-                            height: '200',
-                            width: '250',
-                            playerVars: {
-                                autoplay: 1
-                            }}
-                            }
-                            onReady={_onReady}
-                        />
-                    </div><div class="card mb-4 shadow-sm">
-                        <YouTube
-                            videoId="4x0_e0t7tUo"
-                            opts={{
-                            height: '200',
-                            width: '250',
-                            playerVars: {
-                                autoplay: 1
-                            }}
-                            }
-                            onReady={_onReady}
-                        />
-                    </div>
-                    
                 </div>
-                {/* <YouTube
-                    videoId="4x0_e0t7tUo"
-                    opts={{
-                    height: '40',
-                    width: '60',
-                    playerVars: {
-                        autoplay: 1
-                    }}
-                    }
-                    onReady={_onReady}
-                /> */}
-                <br></br>
+                {/* <!--Grid column--> */}
+
+                {/* <!--Grid column--> */}
+                <div class="col-lg-4 col-md-6">
+
+                <p class="h5 mb-4">.z-depth-2</p>
+
+                <div class="embed-responsive embed-responsive-16by9 z-depth-2">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa3Iczgh8Ok" style={{height: '101%'}}
+                    allowfullscreen title="frame3"></iframe>
+                </div>
+
+                </div>
+                {/* <!--Grid column--> */}
+
+                </div>
+                {/* <!--Grid row--> */}
+
+                {/* <!--Grid row--> */}
+                <div class="row mb-5">
+
+                {/* <!--Grid column--> */}
+                <div class="col-lg-4 col-md-12">
+
+                <p class="h5 mb-4">.z-depth-3</p>
+
+                <div class="embed-responsive embed-responsive-16by9 z-depth-3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa3Iczgh8Ok" allowfullscreen title="frame4"></iframe>
+                </div>
+
+                </div>
+                {/* <!--Grid column--> */}
+
+                {/* <!--Grid column--> */}
+                <div class="col-lg-4 col-md-6">
+
+                <p class="h5 mb-4">.z-depth-4</p>
+
+                <div class="embed-responsive embed-responsive-16by9 z-depth-4">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa3Iczgh8Ok" allowfullscreen title="frame5"></iframe>
+                </div>
+
+                </div>
+                {/* <!--Grid column--> */}
+
+                {/* <!--Grid column--> */}
+                <div class="col-lg-4 col-md-6">
+
+                <p class="h5 mb-4">.z-depth-5</p>
+
+                <div class="embed-responsive embed-responsive-16by9 z-depth-5">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa3Iczgh8Ok" allowfullscreen title="frame6"></iframe>
+                </div>
+
+                </div>
+                {/* <!--Grid column--> */}
+
+                </div>
+                {/* <!--Grid row--> */}
+
+                {/* <!--Grid row--> */}
+                <div class="row d-flex justify-content-center">
+
+                {/* <!--Grid column--> */}
+                <div class="col-md-6">
+
+                <p class="h5 mb-4">.hoverable</p>
+
+                <div class="embed-responsive embed-responsive-16by9 hoverable">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa3Iczgh8Ok" style={{height: '101%'}}
+                    allowfullscreen title="frame7"></iframe>
+                </div>
+
+                </div>
+                {/* <!--Grid column--> */}
+
+                </div>
+                {/* <!--Grid row--> */}
 
                 <ul class="actions">
                     <li><a href="#" class="button alt">button</a></li>

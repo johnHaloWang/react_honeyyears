@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react';
 import '../App.css';
 import {Link} from 'react-router-dom'
-import cp from '../img/together.png'
+import cp from '../img/together.jpg'
 
 
 
@@ -32,11 +32,11 @@ function About() {
     <section id="one">
 				<div class="inner">
 					<header>
+						<h2>关于我们</h2>
+            <br></br>
             <center>
               <img src={cp} />
             </center>
-            <br></br>
-						<h2>About us</h2>
 					</header><br></br>
                 <p class="jumbotron">
                   <center>“白日梦想家”旅行计划</center><br></br>

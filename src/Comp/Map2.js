@@ -1,5 +1,5 @@
 import React, {useState, useEffect, Component } from 'react';
-import  mappic from "../img/map2.png";
+import  mappic from "../img/map3.jpg";
 import '../App.css';
 // import ImageMapper from './ImageMapper';
 import ImageMapper from 'react-image-mapper';
@@ -317,9 +317,9 @@ export class Map2 extends React.Component{
 			<section id="footer">
 				<div class="inner">
 					<header>
-						<h2>Get in Touch</h2>
+						<h2>关注我们</h2>
 					</header>
-					<form method="post" action="#">
+					{/* <form method="post" action="#">
 						<div class="field half first">
 							<label for="name">Name</label>
 							<input type="text" name="name" id="name" />
@@ -335,7 +335,12 @@ export class Map2 extends React.Component{
 						<ul class="actions">
 							<li><input type="submit" value="Send Message" class="alt" /></li>
 						</ul>
-					</form>
+					</form> */}
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+					<a href="https://www.instagram.com/honeyyears/?r=nametag" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/channel/UCdGDDXqwO4Zmn44zLkImn2w/featured" class="fa fa-youtube"></a>
+					<a href="https://www.facebook.com/profile.php?id=100045240573044" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
 					<div class="copyright">
 						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
 					</div>

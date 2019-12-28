@@ -2,6 +2,8 @@ import React from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 import {Link} from 'react-router-dom';
+// import  maplogoimg from "../img/logo.jpg";
+import LOGO from "../img/logo3.png";
 
 function Nav() {
     const navStyle = {
@@ -12,8 +14,8 @@ function Nav() {
     return (
         <header id="header">
 				<div class="inner">
-                        <Link to='/home' class="logo">
-                            Honeyyears
+                        <Link to='/home' class="logo"> HoneyYears.com 
+                            <img id="headerlogo" src ={LOGO} />
                         </Link>
 					{/* <a href="index.html" class="logo">Honeyyears</a> */}
 					<nav id="nav">
@@ -21,7 +23,7 @@ function Nav() {
                             <li>Home</li>
                         </Link>
                         <Link style={navStyle} to='/about'>
-                        <li>About Us</li>
+                            <li>About Us</li>
                         </Link>
                         {/* <Link style={navStyle} to='/shop'>
                             <li>Shop</li>
@@ -29,8 +31,6 @@ function Nav() {
                         <Link style={navStyle} to='/donation'>
                             <li>Donation</li>
                         </Link>
-                        
-                
 					</nav>
 				</div>
 			</header>
